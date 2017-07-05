@@ -2,7 +2,9 @@ extends /blocks/layout-default/layout-default
 
 include ../blocks/header/header
 include ../blocks/hero/hero
-include ../blocks/footer/footer
+include ../blocks/section/section
+include ../blocks/subjects/subjects
+include ../blocks/map/map
 
 
 block head
@@ -11,5 +13,10 @@ block head
 block content
 	+header()
 	+hero()
+	+section-why()
+	+section-developed()
+	+section-advantages()
+	+section-atmo()
+	+subjects()
+	+map()
 
-	+footer()

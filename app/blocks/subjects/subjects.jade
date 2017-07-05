@@ -1,3 +1,62 @@
 mixin subjects()
-	+b.subjects&attributes(attributes)
-		block
+	.subjects
+		.subjects__in
+			h1.subjects__title Предметы
+			p.subjects__text Выберите предметы по которым желаете сдать тест
+
+		.subjects__form
+			form(action="/", method="post")
+				.subjects__row
+					span.wpcf7-form-control-wrap.subjects
+						span.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.wpcf7-exclusive-checkbox.class__wrapper
+							span.wpcf7-list-item.first
+								label
+									input(type='checkbox', name='somename', value='english')
+									span.wpcf7-list-item-label Русский язык
+							span.wpcf7-list-item
+								label
+									input(type='checkbox', name='somename', value='math')
+									span.wpcf7-list-item-label Математика базовая
+							span.wpcf7-list-item
+								label
+									input(type='checkbox', name='somename', value='science')
+									span.wpcf7-list-item-label Математика профильная
+							span.wpcf7-list-item.last
+								label
+									input(type='checkbox', name='somename', value='geography')
+									span.wpcf7-list-item-label Обществознание
+							span.wpcf7-list-item.first
+								label
+									input(type='checkbox', name='somename', value='english')
+									span.wpcf7-list-item-label Английский язык
+							span.wpcf7-list-item
+								label
+									input(type='checkbox', name='somename', value='math')
+									span.wpcf7-list-item-label Физика
+							span.wpcf7-list-item
+								label
+									input(type='checkbox', name='somename', value='science')
+									span.wpcf7-list-item-label Биология
+							span.wpcf7-list-item.last
+								label
+									input(type='checkbox', name='somename', value='geography')
+									span.wpcf7-list-item-label Информатика
+							span.wpcf7-list-item
+								label
+									input(type='checkbox', name='somename', value='science')
+									span.wpcf7-list-item-label История
+							span.wpcf7-list-item.last
+								label
+									input(type='checkbox', name='somename', value='geography')
+									span.wpcf7-list-item-label Химия
+
+				.subjects__row
+					input.subjects__input(type="text", placeholder="Ваше имя", value="", name="")
+					input.subjects__input(type="text", placeholder="Номер телефона", value="", name="")
+					input.subjects__submit(type="submit", value="записаться")
+
+
+
+
+
+

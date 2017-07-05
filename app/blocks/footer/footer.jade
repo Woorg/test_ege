@@ -1,3 +1,48 @@
 mixin footer()
-	+b.footer&attributes(attributes)
-		block
+	footer.footer.fixedScroll__redline
+	.container.clearfix
+		.footer--column.c1.left
+			| © 2017 ЕГЭ Центр
+			br
+			| ООО "Диалог Культур"
+			br
+			| ОГРН 1089847207273
+			br
+			| ИНН 7841387951
+			br
+			a.fancybox(href='#terms') Пользовательское соглашение
+			br
+			a(href='/online-payment/') Онлайн оплата
+		.footer--column.c2.left
+			span.footer--phone 8 812 648-00-66
+			.footer--address Саперный переулок, дом 5
+			.footer--address
+				a(href='mailto:contact@spb-ege.ru') contact@spb-ege.ru
+			a(href='mailto:contact@spb-ege.ru')
+			a.lic-link(href='/obrazovatelnaya-litsenziya/')
+				.lic-img
+				.lic-txt-wrap
+					.lic-txt
+						span.lic-txt2 А у нас есть государственная лицензия
+					.lic-txt3 Почему это важно? →
+		img.edumarket-retargeting(src='https://adfocus.ru/adf_tsn.png')
+		.footer--column.c3.left
+			| Делимся опытом и секретами в рассылке
+			.footer--form.clearfix(style='width: 320px;')
+				script(type='text/javascript').
+					/*  */
+					var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":"http://spb-ege.ru/wp-admin/admin-ajax.php","loadingTrans":"Загрузка..."};
+					/*  */
+				.widget_wysija_cont.html_wysija
+					#msg-form-wysija-html588cb6c02ff2a-3.wysija-msg.ajax
+					form#form-wysija-html588cb6c02ff2a-3.widget_wysija.html_wysija(method='post', action='#wysija')
+						p.wysija-paragraph(style='float: left;line-height: 34px;margin-right: 10px;')
+							input.wysija-input(style='height: 34px;width: 160px;font-size: 14px;', type='email', name='wysija[user][email]', class='validate[required,custom[email]]', title='', placeholder='Элетронная почта', value='')
+							span.abs-req undefined ₽
+						input.wysija-submit.wysija-submit-field(style='float: left; margin-top: 1px; line-height: 34px; background-color: #cff651; font-size: 14px; border: 0;padding: 0 16px;', type='submit', value='Подписаться')
+						input(type='hidden', name='form_id', value='3')
+						input(type='hidden', name='action', value='save')
+						input(type='hidden', name='controller', value='subscribers')
+						input(type='hidden', value='1', name='wysija-page')
+						input(type='hidden', name='wysija[user_list][list_ids]', value='3')
+
