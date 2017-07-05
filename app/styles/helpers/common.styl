@@ -1,0 +1,103 @@
+html,
+body
+	height 100%
+
+.main
+	min-height 100%
+	margin-bottom -245px
+
+* html
+	.main
+		height: 100%
+
+.page__buffer
+	height: 245px
+
+.page
+	font-family $fb
+	line-height 1.4
+	color $text-c
+	background $bg-c url('../images/general/bg.jpg') 0 0 / cover no-repeat
+
+.in
+	margin auto
+	padding-right 10px
+	padding-left 10px
+	max-width 940px
+	width 100%
+	min-width 320px
+	+r($d)
+		padding-right 10px
+		padding-left 10px
+
+.button
+	padding-top 1px
+	padding-left 21px
+	padding-right 24px
+	padding-bottom 3px
+	display inline-block
+	vertical-align top
+	font-size 20px
+	text-align center
+	line-height 1.2
+	border-radius 11px
+	border 1px solid #00c6ff
+
+
+// titles
+.title-heavy
+	font-family $fd
+	font-size 30px
+
+// wysiwyg editor styles
+.wysiwyg
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		margin-bottom 30px
+		font-family $fb
+		letter-spacing tracking(150)
+
+	h1
+		font-size 40px
+	h2
+		position relative
+		font-size 36px
+		font-family $fd
+		letter-spacing tracking(50)
+	h3
+		font-size 30px
+		letter-spacing tracking(0)
+	h4
+		font-size 25px
+		letter-spacing tracking(0)
+	h5
+		font-size 21px
+		letter-spacing tracking(0)
+	p
+		margin-bottom 30px
+		font-size 18px
+		line-height 1.4
+	pre
+		margin-bottom 30px
+		padding-bottom 25px
+
+	em
+		font-family $fd
+
+
+	ul,
+	ol
+		margin-bottom 30px
+	li
+		margin-bottom 15px
+
+	img
+		max-width 100%
+		height auto
+
+
