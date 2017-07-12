@@ -1,5 +1,7 @@
 extends /blocks/layout-default/layout-default
 
+include ../blocks/icon/icon
+
 include ../blocks/header/header
 include ../blocks/hero/hero
 include ../blocks/section/section
@@ -11,7 +13,6 @@ block head
 	- var pageTitle = 'Бесплатный тест готовности к ЕГЭ';
 
 block content
-	+header()
 	+hero()
 	+section-why()
 	+section-developed()

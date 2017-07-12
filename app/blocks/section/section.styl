@@ -1,2 +1,118 @@
 .section
 	display block
+	&__in
+		@extends .in
+		clearfix()
+	&_why
+		padding-top 36px
+		padding-bottom 50px
+	&_developed
+		padding-top 50px
+		padding-bottom 23px
+	&_advantages
+		padding-top 45px
+		background #fafaff
+
+	&_atmo
+		padding-top 48px
+
+.why
+	&__title
+		@extends .title
+		text-align center
+	&__items
+		clearfix()
+	&__item
+		margin-left 20px
+		padding 12px 20px 26px
+		float left
+		width 440px
+		min-height 388px
+		text-align center
+		border-radius 20px
+		box-shadow 0 8px 0 0 #DCDDE4
+		&:first-child
+			margin-left 0
+	&__item_pupils
+		.why__img
+			width 304px
+			height 196px
+	&__item_parents
+		.why__img
+			width 289px
+			height 196px
+	&__img
+		margin auto
+	&__item-title
+		@extends .title-h2
+	// &__item-text
+
+.developed
+	clearfix()
+	&__left,
+	&__right
+		float left
+	&__left
+		width 485px
+	&__right
+		margin-left 46px
+		width 388px
+	&__img
+		width 485px
+		height 392px
+	&__title
+		margin-bottom 28px
+		@extends .title
+	&__text
+		@extends .wysiwyg
+
+.advantages
+	&__left,
+	&__right
+		margin-left 20px
+		padding 12px 20px 26px
+		float left
+		width 440px
+		text-align center
+		&:first-child
+			margin-left 0
+	&__img
+		margin auto
+		img
+			max-width 100%
+			height auto
+	&__img_quick
+		margin-bottom 17px
+		width 250px
+		height 187px
+	&__img_cash
+		margin-bottom 25px
+		width 221px
+		height 176px
+
+	&__title
+		margin-bottom 13px
+		@extends .title
+	&__text
+		@extends .wysiwyg
+
+.atmo
+	&__left,
+	&__right
+		float left
+	&__left
+		width 430px
+	&__right
+		margin-left 50px
+		width 440px
+	&__img
+		width 430px
+		height 228px
+		img
+			max-width 100%
+			height auto
+	&__title
+		margin-bottom 15px
+		@extends .title
+	&__text
+		@extends .wysiwyg

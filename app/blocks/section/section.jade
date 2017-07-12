@@ -3,12 +3,14 @@ mixin section-why()
 		.section__in
 			h2.why__title Зачем вам эти курсы?
 			.why__items
-				.why__item
+				.why__item.why__item_pupils
 					.why__img
+						img(src="assets/images/general/child.svg", alt="child")
 					h3.why__item-title Ученикам
 					p.why__item-text Чтобы меньше волноваться перед ЕГЭ, стоит писать тесты чаще. За этот тест никто не будет ругать, и ты сможешь понять насколько все плохо. К тому же ты весело проведешь время — тест надо писать в центре Питера, туда всегда приятно съездить с друзьями.
-				.why__item
+				.why__item.why__item_parents
 					.why__img
+						img(src="assets/images/general/parents.svg", alt="parents")
 					h3.why__item-title Родителям
 					p.why__item-text Вы сможете понять, насколько ваш ребенок готов к ЕГЭ и по результатам теста спланировать подготовку. Если вы выбираете центр или репетитора, то сможете сравнить его с нами.
 
@@ -16,6 +18,8 @@ mixin section-developed()
 	.section.section_developed.developed
 		.section__in
 			.developed__left
+				.developed__img
+					img(src="assets/images/general/teachers.svg", alt="teachers")
 			.developed__right
 				h2.developed__title Тесты разработаны нашими преподавателями
 				.developed__text
@@ -27,13 +31,15 @@ mixin section-advantages()
 	.section.section_advantages.advantages
 		.section__in
 			.advantages__left
-				.advantages__img
+				.advantages__img.advantages__img_quick
+					img(src="assets/images/general/quick.svg", alt="")
 				h2.advantages__title Быстрый результат
 				.advantages__text
 					p Тест занимает от 30 минут до 2 часов, в зависимости от предмета и уровня подготовки сдающего.
 					p Мы проверяем тест сразу, результат вы получите через 20 минут и сможете забрать его домой.
 			.advantages__right
-				.advantages__img
+				.advantages__img.advantages__img_cash
+					img(src="assets/images/general/cash.svg", alt="")
 				h2.advantages__title Тест полностью бесплатен
 				.advantages__text
 					p Мы тестируем любого нашего ученика, чтобы собирать группы по схожему уровню. Поэтому у нас уже есть готовые тесты на большинство случаев.
@@ -49,3 +55,4 @@ mixin section-atmo()
 					p Нам важно сохранять в центре приятную атмосферу, чтобы нашим ученикам было приятно приходить к нам снова и снова. Приходя на тест, вы сможете познакомится с администраторами, получить ответы на интересующие вопросы, увидеть аудитории центра. Мы рады и детям, и родителям. Приходите, у нас всегда есть горячий чай с печеньем.
 			.atmo__right
 				.atmo__img
+					img(src="assets/images/general/friendly-atmo.svg", alt="")

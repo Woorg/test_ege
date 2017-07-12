@@ -1,2 +1,115 @@
 .subjects
 	display block
+	background #fafaff
+	&__in
+		padding-top 40px
+		padding-bottom 60px
+		@extends .in
+	&__title
+		@extends .title
+		text-align center
+	&__text
+		padding-bottom 20px
+		text-align center
+
+	// &__form
+
+	&__row
+		margin-bottom 16px
+		clearfix()
+	&__row_bottom
+		margin-left 20px
+		margin-right 20px
+		font-size 0
+	&__checkboxes
+		.wpcf7-list-item
+			margin-left 12px
+			margin-bottom 17px
+			max-width 148px
+			min-height 50px
+			display table
+			float left
+			font-size 0
+			&:first-child
+				margin-left 0
+			&:nth-child(6n)
+				margin-left 80px
+			label
+				padding-top 5px
+				padding-right 15px
+				padding-bottom 2px
+				padding-left 32px
+				min-height 50px
+				display table-cell
+				vertical-align middle
+				background #5B90F4
+				text-align right
+				border-radius 8px
+				cursor pointer
+				box-shadow 0 3px 0 0 #9A9BA9
+				tr(background .1s ease)
+				&:hover
+					background #4979D3
+			input
+				display none
+				&:checked +
+					span
+						&:before
+							display block
+			span
+				position relative
+				display inline-block
+				font-family $pnB
+				font-size 16px
+				color #FFF
+				letter-spacing tracking(-20)
+				text-align left
+				&:before
+					position absolute
+					top 50%
+					left -24px
+					margin-top -7px
+					content ''
+					display none
+					sprite($check)
+
+	&__checked
+		&.wpcf7-list-item
+			label
+				background #FFBC00
+				box-shadow 0 3px 0 0 #fddb80
+				&:hover
+					background #FFBC00
+
+	&__input,
+	&__submit
+		border none
+		display inline-block
+		height 50px
+		vertical-align top
+		border-radius 8px
+	&__input
+		margin-left 10px
+		padding 15px 20px
+		width 310px
+		background #E7E7EE
+		font-family $pnR
+		font-size 16px
+		color #393B53
+		+placeholder()
+			color #393B53
+		&:first-child
+			margin-left 0
+	&__submit
+		margin-left 10px
+		width 240px
+		background #38D231
+		font-family $pnE
+		font-size 20px
+		color #fff
+		text-align center
+		text-transform uppercase
+		tr(background .2s ease)
+		&:hover
+			background darken(#38D231, 10)
+

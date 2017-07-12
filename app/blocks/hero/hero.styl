@@ -1,2 +1,18 @@
 .hero
+	min-height 700px
 	display block
+	overflow hidden
+	background url('../images/general/header-img.svg') 50% calc(100% + 4px) no-repeat , url('../images/general/bg.jpg') 0 0 / 100% 700px no-repeat
+	&__in
+		padding-top 46px
+		@extends .in
+		text-align center
+		overflow hidden
+		color #FFF
+	&__title
+		font-family $pnB
+		font-size 50px
+	&__text
+		font-family $pnS
+		font-size 30px
+		letter-spacing tracking(-20)

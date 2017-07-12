@@ -14,11 +14,12 @@ body
 	height: 245px
 
 .page
-	font-family $fb
+	font-family $pnR
+	font-size 16px
 	line-height 1.4
+	letter-spacing tracking(-10)
 	color $text-c
-	background $bg-c url('../images/general/bg.jpg') 0 0 / cover no-repeat
-
+	background $bg-c
 .in
 	margin auto
 	padding-right 10px
@@ -45,9 +46,12 @@ body
 
 
 // titles
-.title-heavy
-	font-family $fd
+.title
+	font-family $pnB
 	font-size 30px
+.title-h2
+	font-family $pnB
+	font-size 24px
 
 // wysiwyg editor styles
 .wysiwyg
@@ -58,43 +62,26 @@ body
 	h4,
 	h5,
 	h6
-		margin-bottom 30px
-		font-family $fb
-		letter-spacing tracking(150)
+		font-family $pnB
 
-	h1
-		font-size 40px
-	h2
-		position relative
-		font-size 36px
-		font-family $fd
-		letter-spacing tracking(50)
-	h3
-		font-size 30px
-		letter-spacing tracking(0)
-	h4
-		font-size 25px
-		letter-spacing tracking(0)
-	h5
-		font-size 21px
-		letter-spacing tracking(0)
+
 	p
-		margin-bottom 30px
-		font-size 18px
+		margin-bottom 20px
+		font-size 16px
 		line-height 1.4
-	pre
-		margin-bottom 30px
-		padding-bottom 25px
+	// pre
+	// 	margin-bottom 30px
+	// 	padding-bottom 25px
 
-	em
-		font-family $fd
+	// em
+	// 	font-family $fd
 
 
-	ul,
-	ol
-		margin-bottom 30px
-	li
-		margin-bottom 15px
+	// ul,
+	// ol
+	// 	margin-bottom 30px
+	// li
+	// 	margin-bottom 15px
 
 	img
 		max-width 100%
